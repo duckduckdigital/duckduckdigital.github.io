@@ -32,9 +32,9 @@ const Service = (props: FeatureProps) => {
         {icon}
       </Box>
       <Stack mt="6">
-        <Text as="h3" color={mode("blue.500", "blue.300")} fontSize="xl">
+        <Heading as="h3" color={mode("blue.500", "blue.300")} fontSize="xl">
           {title}
-        </Text>
+        </Heading>
         <Text pr="6" lineHeight="tall">
           {children}
         </Text>
@@ -56,25 +56,38 @@ const Services = () => {
           spacing={{ base: "12", md: "24" }}
         >
           <Service title="Video Booths" icon={<FaFileSignature />}>
-            Keep files and the messages about them together in channels.
+            The best instantaneous video creation and social sharing software
+            out there. Mind-blowing videos can be shared almost instantly.
+            Making your event the highlight of the year
           </Service>
           <Service title="360 Video Booths" icon={<FaHeadset />}>
-            Keep files and the messages about them together in channels.
+            Create amazing experiences that can be instantly shared with a 360
+            degree video booth. Paired with customized software and social
+            sharing, leaves your users in a state of awe.
           </Service>
           <Service
             title="QR Registration & Integration"
             icon={<FaHandsHelping />}
           >
-            Keep files and the messages about them together in channels.
+            Enable consumer registration systems capable of integrating with
+            experiential activations event-wide. QR creates a uniform platform
+            for consumers to receive and share digital content quickly and
+            easily.
           </Service>
           <Service title="Set Design & Construction" icon={<FaFileSignature />}>
-            Keep files and the messages about them together in channels.
+            Have a vision for your event? Let DuckDuckDigital bring it to life!
+            We can handle all of your print, welding, temporary wall, or any of
+            your other event fabrication needs.
           </Service>
           <Service title="Live Stream" icon={<FaFileSignature />}>
-            Keep files and the messages about them together in channels.
+            Have a completely virtual event? Don't have the production
+            experience to really wow your virtual users? Look no further.
           </Service>
-          <Service title="Static Photo Booth" icon={<FaFileSignature />}>
-            Keep files and the messages about them together in channels.
+          <Service title="Virtual Reality" icon={<FaFileSignature />}>
+            Let us work with your team to custom design a virtual reality
+            experience for your attendees. Provide guests with 3rd person video
+            for social of their experience by filming them against a green
+            screen.
           </Service>
         </SimpleGrid>
       </Box>
