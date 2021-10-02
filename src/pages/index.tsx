@@ -1,12 +1,13 @@
 import { graphql, PageRendererProps, useStaticQuery } from "gatsby"
 import React from "react"
-import { Bio } from "../components/bio"
 import { Layout } from "../components/layout"
 import { SEO } from "../components/seo"
 import { MarkdownRemark } from "../graphql-types"
-import { Heading, Stack } from "@chakra-ui/react"
-import { Card } from "../components/card"
-import { Hero } from "../components/hero"
+import { Stack } from "@chakra-ui/react"
+import Hero from "../components/hero"
+import Brands from "../components/Brands"
+import Services from "../components/Services"
+import About from "../components/About"
 
 type Props = PageRendererProps
 
@@ -47,14 +48,17 @@ const BlogIndex = (props: Props) => {
       />
       <Stack spacing={12}>
         <Hero />
-        <Stack spacing={4}>
+        <Brands />
+        <Services />
+        <About />
+        {/* <Stack spacing={4}>
           <Heading as={"h4"} size={"md"}>
             Updates
           </Heading>
           {posts.map(({ node }: { node: MarkdownRemark }) => (
             <Card node={node} />
           ))}
-        </Stack>
+        </Stack> */}
       </Stack>
     </Layout>
   )

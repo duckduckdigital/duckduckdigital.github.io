@@ -20,7 +20,7 @@ export const Newsletter = () => {
           <FormLabel>Email address</FormLabel>
           <Input type="email" />
         </FormControl>
-        <Button type={"submit"} colorScheme={"red"}>
+        <Button type={"submit"} colorScheme={"blue"}>
           Subscribe
         </Button>
       </Stack>
