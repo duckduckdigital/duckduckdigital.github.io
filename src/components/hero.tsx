@@ -35,13 +35,16 @@ const Hero = () => {
           >
             innovative digital experiential marketing agency
           </Heading>
-          <Text color={"white"}>dsfsd</Text>
-          <Stack direction={"row"}>
+          <Text color={"white"}>
+            We provide unique experiences that leave strong impressions
+          </Text>
+          {/* <Stack direction={"row"}>
             <Button
               bg={"blue.400"}
               rounded={"full"}
               color={"white"}
               _hover={{ bg: "blue.500" }}
+              zIndex={1}
             >
               Book Now
             </Button>
@@ -53,7 +56,7 @@ const Hero = () => {
             >
               Services
             </Button>
-          </Stack>
+          </Stack> */}
         </Stack>
       </VStack>
     </Flex>
