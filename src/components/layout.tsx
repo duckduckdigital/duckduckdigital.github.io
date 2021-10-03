@@ -1,6 +1,6 @@
 import { PageRendererProps } from "gatsby"
 import React, { ReactNode } from "react"
-import { Footer } from "./footer"
+import Footer from "./Footer"
 import Nav from "./Nav"
 
 interface Props extends PageRendererProps {
