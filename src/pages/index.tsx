@@ -8,7 +8,7 @@ import Hero from "../components/hero"
 import Brands from "../components/Brands"
 import Services from "../components/Services"
 import About from "../components/About"
-import ContactForm from "../components/ContactForm"
+import Contact from "../components/Contact"
 
 type Props = PageRendererProps
 
@@ -52,7 +52,7 @@ const BlogIndex = (props: Props) => {
         <Brands />
         <Services />
         <About />
-        <ContactForm />
+        <Contact />
         {/* <Stack spacing={4}>
           <Heading as={"h4"} size={"md"}>
             Updates

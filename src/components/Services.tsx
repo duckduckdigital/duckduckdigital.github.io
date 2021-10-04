@@ -83,7 +83,10 @@ const Services = () => {
             Have a completely virtual event? Don't have the production
             experience to really wow your virtual users? Look no further.
           </Service>
-          <Service title="Virtual Reality" icon={<FaFileSignature />}>
+          <Service
+            title="Interactive Video Projections"
+            icon={<FaFileSignature />}
+          >
             Let us work with your team to custom design a virtual reality
             experience for your attendees. Provide guests with 3rd person video
             for social of their experience by filming them against a green

@@ -23,6 +23,7 @@ import {
 } from "@chakra-ui/icons"
 import * as React from "react"
 import { Link as GatsbyLink } from "gatsby"
+import { FaInstagram } from "react-icons/fa"
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
@@ -30,16 +31,14 @@ export default function WithSubnavigation() {
   return (
     <Box width={"full"} position={"fixed"}>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("black", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         zIndex={9}
+        opacity={"0.75"}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -59,9 +58,11 @@ export default function WithSubnavigation() {
           <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
+            fontStyle={"bold"}
+            letterSpacing={"wide"}
+            color={"white"}
           >
-            Logo
+            DuckDuckDigital
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -107,7 +108,7 @@ const DesktopNav = () => {
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map(navItem => (
         <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
+          {/* <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
                 p={2}
@@ -140,7 +141,7 @@ const DesktopNav = () => {
                 </Stack>
               </PopoverContent>
             )}
-          </Popover>
+          </Popover> */}
         </Box>
       ))}
     </Stack>

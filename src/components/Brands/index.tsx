@@ -10,7 +10,7 @@ import * as Logo from "./BrandLogos"
 
 const Brands = () => {
   return (
-    <Box as="section" py="16">
+    <Box as="section" py="16" backgroundColor={"black"}>
       <Box
         maxW={{ base: "xl", md: "7xl" }}
         mx="auto"

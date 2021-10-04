@@ -10,6 +10,10 @@
 
 - `npm run deploy`
 
+## Email forwarding
+
+https://formsubmit.co/
+
 ## Roadmap
 
 - Add Projects
